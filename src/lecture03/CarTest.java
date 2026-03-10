@@ -1,3 +1,5 @@
+package lecture03;
+
 public class CarTest
 {
 	public static void main(String[] args)
@@ -8,6 +10,8 @@ public class CarTest
 		//c1.setModel(2026);
 		System.out.println(c1.getModel());
 		System.out.println(c1.getMake());
+
+        c1.getMake();
 		
 	}
 	

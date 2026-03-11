@@ -66,4 +66,9 @@ public class Car {
 
     }
 
+    public String toString() {  // overriding toString
+        return "Model: " + model + ", Make: " + make + "\n";
+    }
+
+
 }

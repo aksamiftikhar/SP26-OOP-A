@@ -15,6 +15,10 @@ public class DemoMain {
 
     public static void main(String[] args) {
 
+        Car car123 = new Car();
+        System.out.println(car123);
+//        System.out.println(car123.tostring());
+
         // ╔══════════════════════════════════════════════════╗
         // ║ DEMO 1: COPY CONSTRUCTOR ║
         // ╚══════════════════════════════════════════════════╝

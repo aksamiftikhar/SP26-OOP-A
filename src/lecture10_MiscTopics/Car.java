@@ -10,11 +10,15 @@ package lecture10_MiscTopics;
  * Uses Pakistani car data for relatable examples.
  */
 // All classes inherit from the Object class
-public class Car {
+public class Car extends Object {
     private int model;
     private String make;
     private Engine engine; // ← COMPOSITION: Car owns this Engine
-
+    int milage; // package access
+    int getMilage()
+        {
+        return milage;
+        }
     // Default constructor
     public Car() {
         this.model = 2024;
@@ -80,6 +84,7 @@ public class Car {
     // Called by System.out.println(carObject)
     // ───────────────────────────────────────────────
 
+    @Override
     public String toString() {
         return make + " " + model + " [" + engine + "]";
         // Note: engine.toString() is called automatically!

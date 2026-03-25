@@ -3,6 +3,8 @@ package lecture11_EqualsCollectionsArrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import lecture10_MiscTopics.Car; // Fully qualified class name
+
 /**
  * Lecture 11 demo:
  * Shows where equals() is used and where ordering (compareTo) is used.
@@ -10,6 +12,10 @@ import java.util.Arrays;
 public class EqualsCollectionsArraysDemo {
 
     public static void main(String[] args) {
+        Car car1 = new Car();
+        // car1.milage = 100; // Error: mileage has package access in Car
+        // car1.getMilage(); // Error: getMileage has package access in Car
+
 //        BookWithEquals bwe  = new BookWithEquals("abc", "c");
 //
 //        System.out.println(bwe);

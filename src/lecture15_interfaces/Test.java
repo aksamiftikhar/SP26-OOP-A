@@ -1,12 +1,15 @@
 package lecture15_interfaces;
+
+import org.w3c.dom.css.Rect;
+
 abstract class Shape {
     abstract double area();
-    public void draw() {
-
-    }
+    abstract public void draw();
 
     public void draw(int a) {
 
+    }
+    public void someGeneralMethod() {
     }
 }
  class Square extends Shape {
@@ -36,9 +39,24 @@ class Rectangle extends Shape {
     {
         System.out.println("Inside Rectangle with side  " + side1 + ", " + side2);
     }
+    @Override
+    public void draw()
+    {
+        System.out.println("Drawing InsideRectangle with sides  " + side1 + ", " + side2);
+    }
 }
 
+
 public class Test {
+    public static void doSomething(Shape s) // again polymorphic processing of this Shape parameter
+    {
+        s.draw();
+        s.someGeneralMethod();
+    }
+
+
+
+
     public static void main(String[] args) {
         Shape s = new Square();
 
@@ -49,5 +67,11 @@ public class Test {
         }
         sq.printSquare();
         System.out.println(s.area());
+
+        Square sq2 = new Square();
+        Rectangle r2 = new Rectangle();
+
+        doSomething(sq2);
+        doSomething(r2);
     }
 }

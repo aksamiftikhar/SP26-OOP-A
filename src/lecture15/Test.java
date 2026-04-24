@@ -1,6 +1,4 @@
-package lecture15_interfaces;
-
-import org.w3c.dom.css.Rect;
+package lecture15;
 
 abstract class Shape {
     abstract double area();

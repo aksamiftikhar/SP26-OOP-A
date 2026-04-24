@@ -1,4 +1,4 @@
-package lecture15_interfaces;
+package lecture15;
 
 class Calculator {
     int add(int a, int b) {

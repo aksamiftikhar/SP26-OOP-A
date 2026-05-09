@@ -7,7 +7,7 @@ package lecture10_MiscTopics;
  * 3. toString() override
  * 4. equals() override
  *
- * Uses Pakistani car data for relatable examples.
+ * Uses istani car data for relatable examples.
  */
 // All classes inherit from the Object class
 public class Car extends Object {
